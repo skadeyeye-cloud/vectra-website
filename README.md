@@ -17,6 +17,5 @@ Edit the content in `build.py`, run it, then commit the regenerated HTML.
 
 ## Before launch
 
-- Replace the placeholder phone number (`+234 800 000 0000`) in `_source/build.py`
 - Add real social profile URLs (footer)
 - Connect the quote form: set `data-endpoint` on the form in `contact.html` (Formspree, Netlify Forms, etc.). Without it, the form opens the visitor's email app.

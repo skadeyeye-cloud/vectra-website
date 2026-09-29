@@ -5,9 +5,9 @@ from worldmap import proj, W as MAP_W, H as MAP_H
 
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://vectralogisticsintl.com"
-EMAIL = "info@vectralogisticsintl.com"
-PHONE = "+234 800 000 0000"  # placeholder, replace with the real line
-PHONE_HREF = "+2348000000000"
+EMAIL = "Operations@vectralogisticsintl.com"
+PHONE = "+971 55 523 0908"
+PHONE_HREF = "+971555230908"
 
 # ---------------------------------------------------------------- icons
 P = {
@@ -313,7 +313,6 @@ def footer():
         <ul class="contact-list">
           <li>{ic("pin")}<span>Abuja, FCT, Nigeria</span></li>
           <li>{ic("mail")}<a href="mailto:{EMAIL}">{EMAIL}</a></li>
-          <!-- TODO: replace placeholder phone number -->
           <li>{ic("phone")}<a href="tel:{PHONE_HREF}">{PHONE}</a></li>
           <li>{ic("globe")}<span>United States · Europe · Asia</span></li>
         </ul>

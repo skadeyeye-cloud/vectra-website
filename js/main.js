@@ -188,7 +188,7 @@
       // Preview deployments have no mail route; say so instead of implying it was sent.
       success();
       document.querySelector(".form-success h2").textContent = "Preview only";
-      document.querySelector(".form-success p").textContent = "This form isn't connected yet, so nothing was sent. On the live site, enquiries go to " + (form.getAttribute("data-mailto") || "info@vectralogisticsintl.com") + ".";
+      document.querySelector(".form-success p").textContent = "This form isn't connected yet, so nothing was sent. On the live site, enquiries go to " + (form.getAttribute("data-mailto") || "Operations@vectralogisticsintl.com") + ".";
       return;
     }
 
@@ -199,7 +199,7 @@
         .then(function (r) { if (!r.ok) throw new Error(); success(); })
         .catch(function () {
           submitBtn.disabled = false;
-          stepError.textContent = "Something went wrong sending your enquiry. Please email us directly at info@vectralogisticsintl.com.";
+          stepError.textContent = "Something went wrong sending your enquiry. Please email us directly at Operations@vectralogisticsintl.com.";
           stepError.classList.add("is-visible");
         });
       return;
@@ -225,7 +225,7 @@
       "Phone: " + d.phone,
       "Preferred contact: " + d.method
     ].join("\n");
-    var to = form.getAttribute("data-mailto") || "info@vectralogisticsintl.com";
+    var to = form.getAttribute("data-mailto") || "Operations@vectralogisticsintl.com";
     window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent("Quote request — " + d.services) + "&body=" + encodeURIComponent(body);
     success();
   });
